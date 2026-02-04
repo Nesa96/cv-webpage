@@ -1,0 +1,39 @@
+{
+  "title": "Your Professional Title (e.g. Full-Stack Developer)",
+  "location": "City, Country (Remote/On-site)",
+  "summary": "A brief description of your professional background, key strengths, and what you are looking for.",
+  "experience": [
+    {
+      "position": "Job Title",
+      "dates": "Start Date - End Date",
+      "activities": [
+        "Key achievement or responsibility 1",
+        "Key achievement or responsibility 2"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "title": "Degree or Certification Name",
+      "dates": "Start Date - End Date",
+      "school": "University or Institution Name"
+    }
+  ],
+  "skills": [
+    {
+      "name_skills": "Category (e.g. Languages)",
+      "skills": "Skill 1, Skill 2, Skill 3"
+    }
+  ],
+  "languages": ["Language 1 (Proficiency)", "Language 2 (Proficiency)"],
+  "projects": ["Project Name: Brief description and (GitHub link)"],
+  "certifications": [
+    {
+      "title": "Certification Name",
+      "dates": "Year",
+      "school": "Provider"
+    }
+  ],
+  "linkdIn": "https://www.linkedin.com/in/your-profile",
+  "gitHub": "https://github.com/your-username"
+}
