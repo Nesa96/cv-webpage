@@ -12,7 +12,7 @@ export interface education {
 
 export interface skill {
     name_skills: string,
-    skills: string
+    skills: string[]
 };
 
 export interface cvJson {
