@@ -3,7 +3,7 @@ import {education} from "../types/cv";
 function EducationCard({education}: {education: education}) {
 
     return (
-        <div className="flex flex-row mb-12">
+        <div data-testid="education-card" className="flex flex-row mb-12">
             <div className="w-[35%]">
                 <h4 className="text-gray-600 italic text-right mr-5">{education.dates}</h4>
             </div>

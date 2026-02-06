@@ -1,13 +1,13 @@
 import { render, screen } from '@testing-library/react'
 import { expect, test } from 'vitest'
 import Page from './SkillSection'
+import { myCvInfo } from "../data";
 
 test('We see some skills', () => {
   render(<Page />)
-  
-  // Info that is for sure in your skills - please modify on your own
-  expect(screen.getByText(/Python/i)).toBeInTheDocument()
-  expect(screen.getByText(/React/i)).toBeInTheDocument()
+
+  const types_skills = screen.getAllByTestId('skill-type')
+  expect(types_skills.length).toBe(myCvInfo.skills.length)
   
   const allSkills = document.querySelectorAll('.tech-text')
   expect(allSkills.length).toBeGreaterThan(0)

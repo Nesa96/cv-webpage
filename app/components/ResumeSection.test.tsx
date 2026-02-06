@@ -18,10 +18,12 @@ test('Name of all the resume sections', () => {
 
 test('Resume sections should not be empty', () => {
     render(<Page />)
+    
+    const cards = screen.getAllByTestId('education-card')
+    expect(cards.length).toBe(myCvInfo.education.length + myCvInfo.certifications.length)
 
-    expect(screen.queryByText(/Full-Stack Engineer/i)).toBeInTheDocument()
-    expect(screen.queryByText(/Master of Science/i)).toBeInTheDocument()
-    expect(screen.queryByText(/Complete Web Design/i)).toBeInTheDocument()
+    const cards_exp = screen.getAllByTestId('experience-card')
+    expect(cards_exp.length).toBe(myCvInfo.experience.length)
 
     // Check if there are dates
     const dates = screen.queryAllByText(/\d{4}/)

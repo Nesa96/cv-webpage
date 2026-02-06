@@ -3,7 +3,7 @@ import { skill } from "../types/cv";
 function SkillCard({skill}: {skill : skill}) {
 
     return(
-        <div> 
+        <div data-testid="skill-type"> 
             <h2 className="text-2xl font-semibold my-6 text-gray-800 italic border-b border-gray-400 pb-2">{skill.name_skills}</h2>
             <div className="grid grid-cols-3">
                 {skill.skills.map((s,i) => {return(

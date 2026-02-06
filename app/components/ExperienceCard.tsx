@@ -3,7 +3,7 @@ import {experience} from "../types/cv";
 function ExperienceCard({experience}: {experience: experience}) {
 
     return (
-        <div className="flex flex-row mb-12">
+        <div data-testid="experience-card" className="flex flex-row mb-12">
             <div className="w-[35%]">
                 <h4 className="text-gray-600 italic text-right mr-5">{experience.dates}</h4>
             </div>
