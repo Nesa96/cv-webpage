@@ -13,5 +13,7 @@ jobs:
           cache: 'npm'
       - name: Install dependencies
         run: npm install
+      - name: Create dummy data for tests
+        run: cp app/data/cv-data.example.json app/data/cv-data.json
       - name: Run tests
         run: npm test -- --run
