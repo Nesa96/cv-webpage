@@ -28,6 +28,7 @@
   "languages": ["Language 1 (Proficiency)", "Language 2 (Proficiency)"],
   "projects": [{"name": "Project Name", 
                 "description": "Brief description",
+                "images": ["/vercel.svg"],
                 "link": "Link proyect if available"}],
   "certifications": [
     {

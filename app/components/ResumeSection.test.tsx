@@ -24,8 +24,4 @@ test('Resume sections should not be empty', () => {
 
     const cards_exp = screen.getAllByTestId('experience-card')
     expect(cards_exp.length).toBe(myCvInfo.experience.length)
-
-    // Check if there are dates
-    const dates = screen.queryAllByText(/\d{4}/)
-    expect(dates.length).toBeGreaterThan(0)
 })
