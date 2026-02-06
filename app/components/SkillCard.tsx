@@ -10,7 +10,7 @@ function SkillCard({skill}: {skill : skill}) {
                     <span 
                         key={i}
                         className={`px-4 py-2 text-center bg-gray-100 border rounded-lg 
-                                    font-mono text-gray-800 shadow-sm m-3
+                                    tech-text text-gray-800 shadow-sm m-3
                                     ${s.includes('(Learning)') ? 'border-blue-600 border-dashed' : 'border-gray-200'}`}
                     >
                         {s.replace("(Learning)", "")}

@@ -22,11 +22,13 @@
   "skills": [
     {
       "name_skills": "Category (e.g. Languages)",
-      "skills": "Skill 1, Skill 2, Skill 3"
+      "skills": ["Skill 1", "Skill 2", "Skill 3"]
     }
   ],
   "languages": ["Language 1 (Proficiency)", "Language 2 (Proficiency)"],
-  "projects": ["Project Name: Brief description and (GitHub link)"],
+  "projects": [{"name": "Project Name", 
+                "description": "Brief description",
+                "link": "Link proyect if available"}],
   "certifications": [
     {
       "title": "Certification Name",

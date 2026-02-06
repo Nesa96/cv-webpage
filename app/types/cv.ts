@@ -15,6 +15,14 @@ export interface skill {
     skills: string[]
 };
 
+export interface project {
+    name: string,
+    description: string,
+    images: string[],
+    link?: string
+};
+
+
 export interface cvJson {
     title: string,
     location: string,
@@ -23,7 +31,7 @@ export interface cvJson {
     education: education[],
     skills: skill[],
     languages: string[],
-    projects: string[],
+    projects: project[],
     certifications: education[],
     linkdIn: string,
     gitHub: string

@@ -5,7 +5,7 @@ import { Home } from 'lucide-react';
 function Header() {
 
     return (
-        <header className="flex justify-between items-center p-3 max-w-[93%] mx-auto" >
+        <header className="flex justify-between items-center px-3 pt-7 max-w-[93%] mx-auto" >
             <div className="flex items-center gap-4">
                 <Link href="/" className="hover:text-gray-300 transition-colors">
                     <Home size={20} />
@@ -13,17 +13,17 @@ function Header() {
                 <h1 className="text-xl font-bold">
                     {process.env.MY_NAME}
                 </h1>
-                <h3 className="text-sm text-gray-500 uppercase pt-[3px]">
+                <h3 className="text-sm text-gray-500 uppercase pt-[4px]">
                     {myCvInfo.title}
                 </h3>
             </div>
     
             <nav className="flex gap-6">
-                <Link className="hover:text-gray-300 transition-colors" href="/resume">Resume</Link>
+                <Link className="font-mono hover:text-gray-300 transition-colors" href="/resume">Resume</Link>
                 <span className="text-gray-300">|</span>
-                <Link className="hover:text-gray-300 transition-colors" href="/projects">Projects</Link>
+                <Link className="font-mono hover:text-gray-300 transition-colors" href="/projects">Projects</Link>
                 <span className="text-gray-300">|</span>
-                <Link className="hover:text-gray-300 transition-colors" href="/skills">Skills</Link>
+                <Link className="font-mono hover:text-gray-300 transition-colors" href="/skills">Skills</Link>
             </nav>
         </header>
     )   
