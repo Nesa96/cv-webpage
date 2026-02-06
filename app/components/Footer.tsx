@@ -3,11 +3,7 @@ import { SiLinkedin, SiGithub } from 'react-icons/si';
 function Footer() {
 
     return (
-        <footer className="flex justify-between items-center px-3 pt-4 pb-7 max-w-[93%] mx-auto border-t border-gray-400" >
-            <div>
-                <p className="font-bold">Phone</p>
-                <p className="text-sm text-gray-500">{process.env.MY_PHONE}</p>
-            </div>
+        <footer className="flex justify-between items-center px-10 pt-4 pb-7 max-w-[93%] mx-auto border-t border-gray-400" >
             <div>
                 <p className="font-bold">Mail</p>
                 <p className="text-sm text-gray-500">{process.env.MY_EMAIL}</p>
