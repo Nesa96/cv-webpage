@@ -18,6 +18,10 @@ export interface skill {
 export interface project {
     name: string,
     description: string,
+    code_link: string,
+    frontend_tools: string[],
+    backend_tools: [],
+    skills: string[],
     images: string[],
     link?: string
 };
