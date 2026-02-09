@@ -21,7 +21,7 @@ function ProjectCard({project}: {project: project}) {
                 </p>
 
                 <ul className="space-y-3 mt-2 md:mt-0 mb-5 md:ml-3 text-xs md:text-base text-gray-500 italic">
-                    {project.skills.map((s, i) => (
+                    {project.top_points.map((s, i) => (
                         <li key={i} className="flex gap-2 justify-center md:justify-start">
                             <span className="text-blue-400">✦</span>{s}
                         </li>

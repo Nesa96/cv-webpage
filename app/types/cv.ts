@@ -21,7 +21,7 @@ export interface project {
     code_link: string,
     frontend_tools: string[],
     backend_tools: [],
-    skills: string[],
+    top_points: string[],
     images: string[],
     link?: string
 };
