@@ -22,6 +22,10 @@ export interface project {
     link?: string
 };
 
+export interface NavLinkProps {
+    href: string;
+    children: React.ReactNode;
+}
 
 export interface cvJson {
     title: string,
