@@ -28,6 +28,10 @@
   "languages": ["Language 1 (Proficiency)", "Language 2 (Proficiency)"],
   "projects": [{"name": "Project Name", 
                 "description": "Brief description",
+                "code_link": "Link to your code",
+                "top_points": ["Bullet point 1", "Bullet point 2"],
+                "frontend_tools": ["Tool 1", "Tool 2"],
+                "backend_tools": ["Tool 1", "Tool 2"],
                 "images": ["/vercel.svg"],
                 "link": "Link proyect if available"}],
   "certifications": [
