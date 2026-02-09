@@ -20,7 +20,7 @@ export interface project {
     description: string,
     code_link: string,
     frontend_tools: string[],
-    backend_tools: [],
+    backend_tools: string[],
     top_points: string[],
     images: string[],
     link?: string
