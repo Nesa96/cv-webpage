@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "pretest": "node -e \"const fs = require('fs'); if (!fs.existsSync('app/data/cv-data.json')) fs.copyFileSync('app/data/cv-data.example.json', 'app/data/cv-data.json')\"",
     "test": "vitest"
   },
   "dependencies": {
