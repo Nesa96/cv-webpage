@@ -52,6 +52,7 @@ body::after {
   z-index: -2;
 }
 
+/* FONT SIZES */
 h1, h2, h3 {
   font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
@@ -66,4 +67,21 @@ p, li, span {
 
 footer p {
   font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace !important;
+}
+
+
+/* ANIMATION */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-page-entry {
+  animation: fadeInUp 0.8s ease-out forwards;
 }

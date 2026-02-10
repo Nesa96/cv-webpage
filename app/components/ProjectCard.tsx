@@ -29,17 +29,23 @@ function ProjectCard({project}: {project: project}) {
                 </ul>
 
                 <div className="flex flex-wrap gap-x-8 gap-y-3 justify-center md:justify-start items-center">
-                        <div className="flex flex-row items-center gap-3">
+                        <div className="flex flex-row group relative items-center gap-3">
                             {project.frontend_tools.map((tool) => 
                                 <span key={tool} className="text-[10px] md:text-[13px] uppercase font-bold text-gray-400 tracking-widest flex items-center gap-1">
                                     <Monitor size={14}/>
+                                    <span className="absolute -top-8 left-1/2 -translate-x-1/2 scale-0 transition-all rounded bg-gray-200 p-2 text-[8px] text-gray-600 group-hover:scale-100">
+                                        Frontend Stack
+                                    </span>
                                     {tool}
                                 </span>)}
                         </div>
-                        <div className="flex flex-row items-center gap-3">
+                        <div className="flex flex-row group relative items-center gap-3">
                             {project.backend_tools.map((tool) => 
                                 <span key={tool} className="text-[10px] md:text-[13px] uppercase font-bold text-gray-400 tracking-widest flex items-center gap-1">
                                     <Cloud size={14}/>
+                                    <span className="absolute -top-8 left-1/2 -translate-x-1/2 scale-0 transition-all rounded bg-gray-200 p-2 text-[8px] text-gray-600 group-hover:scale-100">
+                                        Backend Stack
+                                    </span>
                                     {tool}
                                 </span>)}
                         </div>
