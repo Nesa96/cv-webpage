@@ -25,9 +25,15 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <Header />
-        <PageAnimation>{children}</PageAnimation>
-        <Footer/>
+        <div className="flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-grow">
+            <PageAnimation>{children}</PageAnimation>
+          </main>
+          <div className="shrink-0">
+            <Footer/>
+          </div>
+        </div>
       </body>
     </html>
   );

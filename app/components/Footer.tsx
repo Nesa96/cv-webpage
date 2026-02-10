@@ -7,7 +7,7 @@ function Footer() {
             <div className="flex flex-col">
                 <p className="hidden md:inline font-bold uppercase">Contact</p>
                 <a href={`mailto:${process.env.MY_EMAIL}`} className="text-xs md:text-sm text-gray-500">
-                    <span className="md:hidden flex items-center gap-1 text-black">
+                    <span className="md:hidden flex items-center gap-1 text-black dark:text-gray-300">
                         <SiGmail size={20} />
                     </span>
                     <span className="hidden md:inline">
